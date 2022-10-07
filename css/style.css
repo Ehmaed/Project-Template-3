@@ -177,6 +177,21 @@ a{
     bottom: 0;
     left: 0;
 }
+
+button{
+    display: none;
+    padding: 20px;
+    color: white;
+    background-color:rgb(130, 129, 130);
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+    /* border-radius: 10px; */
+}
 /* Main Component  */
 
 /* Start head section  */
@@ -1113,6 +1128,7 @@ a{
     background-color: var(--main-color);
     display: block;
     height: 100%;
+    transition: width .3s linear;
 }
 /* Section Skills  */
 
