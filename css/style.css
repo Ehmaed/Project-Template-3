@@ -180,9 +180,9 @@ a{
 
 button{
     display: none;
-    padding: 20px;
+    padding: 15px;
     color: white;
-    background-color:rgb(130, 129, 130);
+    background-color: rgb(93 86 86 / 74%);
     border: none;
     position: fixed;
     bottom: 20px;
@@ -190,8 +190,10 @@ button{
     cursor: pointer;
     z-index: 1000;
     font-weight: bold;
-    /* border-radius: 10px; */
+    font-size: larger;
+    border-radius: 0 10px;
 }
+
 /* Main Component  */
 
 /* Start head section  */

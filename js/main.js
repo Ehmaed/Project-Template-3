@@ -2,16 +2,29 @@ let btn = document.querySelector("button");
 let skills = document.querySelector(".skills");
 let progress = document.querySelectorAll('.progr-bars span');
 
+onScrollEvent();
+handleUpButtonClick();
 
-function ScrollButton(){
+
+function onScrollEvent() {
     window.onscroll = function () {
+        showUpButton();
+        fillProgress();
+    }
+    // window.addEventListener('scroll',function () {
+
+    // });
+}
+
+function showUpButton() {
         if (window.scrollY >= 500) {
             btn.style.display = "block";
         } else {
             btn.style.display = "none";
         }
-    };
-    
+}
+
+function handleUpButtonClick() {
     btn.onclick = function () {
         window.scrollTo({
             left: 0,
@@ -21,12 +34,12 @@ function ScrollButton(){
     };
 }
 
-ScrollButton();
 
-window.onscroll = function () { 
-    if (window.scrollY >= skills.offsetTop - 250) {
-        progress.forEach((progress) => { 
-            progress.style.width = progress.dataset.progress;
-        });
-    }
-};
+function fillProgress() {
+        if (window.scrollY >= skills.offsetTop - 250) {
+            progress.forEach((progress) => { 
+                progress.style.width = progress.dataset.progress;
+            });
+        }
+}
+
