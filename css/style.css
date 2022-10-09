@@ -1267,7 +1267,7 @@ button{
 }
 
 .events .container .col .time span{display: block;}
-.events .container .col .time .unit{
+.events .container .col .time .days, .hours, .minutes, .seconds{
     padding: 15px;
     color: var(--main-color);
     font-weight: bold;
