@@ -1,0 +1,124 @@
+/* Main Varible Code  */
+
+:root{
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --color-background: #ececec;
+    --delay-items: .3s;
+}
+
+/* Main Variable Code  */
+
+/* Global coder rule  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    /* counter-reset: services; */
+}
+
+.section{
+    margin: 90px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECECEC;
+    box-shadow: 2px 2px 15px rgb(0 0 0 / 20%);
+}
+
+img{
+    width: 60%;
+}
+
+.form{
+    width: 30%;
+}
+
+form{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form input{
+    margin: 15px 0;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 2px solid #D7D7D7;
+    border-radius: 6px 0;
+    width: 300px;
+    outline: none;
+    position: relative;
+    color: var(--main-color-alt)
+}
+
+form .fa-user-tie{
+    position: absolute;
+    left: 66%;
+    top: 36.5%;
+    font-size: 25px;
+    color: grey
+}
+
+form .fa-unlock{
+    position: absolute;
+    left: 66%;
+    top: 51.5%;
+    font-size: 25px;
+    color: grey
+}
+
+form .progress-one,
+form .progress-two{
+    background-color: var(--main-color-alt);
+    height: 2px;
+    width: 0;
+    position: relative;
+    top: -17px;
+    transition: 0.5s;
+    max-width: 300px;
+}
+
+form .count-one{
+    display: block;
+    position: absolute;
+    right: 106px;
+    top: 255px;
+}
+
+form .count-two{
+    display: block;
+    position: absolute;
+    right: 106px;
+    top: 349px;
+}
+
+form input[type="button"]{
+    background-color: darkgrey;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    color: black;
+}
+
+form input[type="button"]:hover{
+    background-color: rgb(114, 114, 114);
+    color:#ECECEC;
+}
+
+.zero{
+    color: red;
+    font-weight: bolder;
+    /* background-color: red; */
+    /* height: 2px; */
+}
