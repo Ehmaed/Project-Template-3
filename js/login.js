@@ -11,6 +11,11 @@ let progressTwo = document.querySelector(".progress-two");
 let maxLengthOne = username.getAttribute("maxlength");
 let maxLengthTwo = password.getAttribute("maxlength");
 
+let toggle = document.querySelector('.toggle');
+let nav = document.querySelector('nav');
+let close = document.querySelector('.fa-solid');
+
+
 countOne.innerHTML = maxLengthOne;
 countTwo.innerHTML = maxLengthTwo;
 
@@ -27,3 +32,19 @@ password.addEventListener('input', function () {
 
     progressTwo.style.width = `${(this.value.length * 100) / maxLengthTwo}%`;
 });
+
+
+toggle.addEventListener("click", function () { 
+    nav.classList.add('open');
+});
+
+close.onclick = function () { 
+    this.parentElement.classList.remove('open');
+};
+
+
+document.onkeyup = function (element) { 
+    if (element.key === "Escape") {
+        nav.classList.remove("open");
+    }
+};
