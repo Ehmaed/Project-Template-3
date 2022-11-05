@@ -4,6 +4,8 @@ let progress = document.querySelectorAll('.progr-bars span');
 let nums = document.querySelectorAll(".stats .col .num");
 let stats = document.querySelector('.stats');
 let countDown = new Date("Dec 31, 2023 23:59:59").getTime();
+let element = document.querySelector(".scroll");
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 
 onScrollEvent();
@@ -107,3 +109,8 @@ function flipTimer() {
 // const addHour = Math.floor((dateDiff % day) / hour);
 // const addMin = Math.floor((dateDiff % hour) / min);
 // const addSec = Math.floor((dateDiff % min) / sec);
+
+window.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop;
+    element.style.width = `${(scrollTop / height) * 100}%`;
+});

@@ -194,6 +194,16 @@ button{
     border-radius: 0 10px;
 }
 
+.scroll {
+    height: 6px;
+    /* width: 100px; */
+    background-color: #0075ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 /* Main Component  */
 
 /* Start head section  */
