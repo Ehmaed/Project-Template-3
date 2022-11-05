@@ -195,8 +195,7 @@ button{
 }
 
 .scroll {
-    height: 6px;
-    /* width: 100px; */
+    height: 10px;
     background-color: #0075ff;
     position: fixed;
     top: 0;
